@@ -43,7 +43,7 @@ def main():
 
         async def on_message(message):
 
-            if message.content == "🌎":
+            if message.content == open("Config\\COMMAND.string", "r").read():
                 
                 if open("Config\\CREATEROLES.bool", "r").read() == "True":
                     N = 15
