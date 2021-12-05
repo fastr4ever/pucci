@@ -1,7 +1,12 @@
 def Conf():
 
     try:
-
+        
+        Command = input("The command for nuking (string): ")
+        
+        with open("COMMAND.string", "w") as w:
+                w.write(Command)
+        
         CreateChannels = input("Do you want to create channels? (y/n): ")
 
         if CreateChannels == "y":
